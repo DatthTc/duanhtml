@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* ================= kHai báo chung ====================== */
+:root {
+  --font-heading: "sen", sans-serif;
+  --primary-color: #ffb900;
+}
+/* ======================common lệnh áp dụng cho tất cả các thuộc tính chung  */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% -50px);
+  padding: 4.7rem;
+}
+.btn {
+  display: inline-block;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  min-width: 118px;
+  line-height: 50px;
+  border-radius: 24.5px;
+  padding: 0px 41px;
+}
+/* =========================header======================== */
+.header {
+  background: #fffcf4;
+}
+.header .body-header {
+  position: static;
+  top: -28px;
+}
+.header .body-header {
+  display: flex;
+  align-items: center;
+  /* background-color: #ce1414; */
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+  margin-left: auto;
+}
+.nav a {
+  color: #5f5b53;
+  text-align: center;
+  font-size: 1.6rem;
+  position: relative;
+
+  /* margin-left: 4.2rem; */
+  padding: 8px 21px;
+}
+.nav li.active a,
+.nav a:hover {
+  color: #020000;
+  /* font-weight: 600; */
+  text-shadow: 1px 0px 0 currentColor;
+}
+.nav li.active a::after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+  position: absolute;
+  left: 21px;
+  bottom: 5px;
+}
+.header .action {
+  margin-left: 49px;
+}
+.item {
+  display: flex;
+}
+/* ============================== hero ================== */
+.hero {
+  padding: 56px 0 65px; /*64-8 ở phần header*/
+  background: #fffcf4;
+}
+.hero .body {
+  display: flex;
+}
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+.hero .content-block {
+  width: 52%;
+}
+/* *** CHỈNH ĐỘ RỘNG CỦA ẢNH *** */
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* *** CHỈNH ICON *** */
+.hero .hero-summary {
+  position: absolute;
+  bottom: 48px;
+  right: 0px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px;
+}
+.hero-summary .item {
+  display: flex;
+}
+.hero-summary .item + .item {
+  margin-top: 22px;
+}
+.hero-summary .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%; /* bo góc icon
+  combo huyền thoại =))) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* --------------------- */
+  background-color: #fff9e8;
+}
+.hero-summary .icon2 {
+  background-color: #fcefff;
+}
+.hero-summary .icon3 {
+  background-color: #ebeaff;
+}
+.hero-summary .info {
+  margin-left: 16px;
+}
+.hero-summary .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px; /* 166.667% */
+}
+.hero-summary .lable {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+}
+
+/* ================================ body =================== */
+.hero .content-block {
+  padding-top: 64px;
+  padding-left: 130px;
+  width: 52%;
+}
+.hero .heading {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: -1.16px;
+}
+/* line text build new ..... */
+.hero .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.66rem;
+  margin-top: 22px;
+}
+/* chỉnh btn */
+.hero .btn-groupp {
+  margin-top: 38px;
+}
+/* chỉnh con btn  */
+.hero .btn {
+  min-width: 180px;
+  line-height: 60px;
+  background-color: var(--primary-color);
+}
+/* chỉnh watch video */
+.hero .watch-video {
+  border: none;
+  background: transparent; /*bg trong suot*/
+  display: flex;
+}
